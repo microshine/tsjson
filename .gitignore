@@ -57,3 +57,14 @@ typings/
 # dotenv environment variables file
 .env
 
+# OS X
+.DS_Store
+
+# Output
+build
+
+# VS Code
+.vscode
+
+# test
+test/**/*.js

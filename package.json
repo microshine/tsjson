@@ -1,0 +1,40 @@
+{
+  "name": "tsjson",
+  "version": "1.0.0",
+  "description": "JSON encoder/decoder",
+  "main": "build/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha test",
+    "build:test": "npm run build:map && cd test && tsc",
+    "build:map": "rollup -c -m",
+    "precoverage": "npm run build:test",
+    "coverage": "nyc npm test",
+    "precoverage:html": "npm run coverage",
+    "coverage:html": "nyc report -r html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microshine/tsjson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microshine/tsjson/issues"
+  },
+  "homepage": "https://github.com/microshine/tsjson#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "pvtsutils": "^1.0.2",
+    "tslib": "^1.8.1"
+  }
+}

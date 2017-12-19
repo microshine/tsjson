@@ -1,0 +1,18 @@
+# VS Code
+.vscode
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# config files
+ts*.json
+rollup*.js
+
+# test
+test
+
+# source
+src
